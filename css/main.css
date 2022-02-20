@@ -1,2 +1,148 @@
+/*PALETA DE COLORES */
 body {
-  color: chartreuse; }
+  font-family: 'Roboto', sans-serif;
+  background-color: #0d6ba6;
+  background-color: linear-gradient(148deg, #0d6ba6 0%, #124673 42%, #41aed9 100%);
+  box-sizing: border-box; }
+
+/* LAYOUT GRID */
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat 5, fr; }
+  body header {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+  body main {
+    grid-column: 1/3;
+    grid-row: 2/3; }
+  body section {
+    grid-column: 1/3;
+    grid-row: 3/4; }
+  body footer {
+    grid-column: 1/3;
+    grid-row: 4/5; }
+
+/* NAV */
+.navbar {
+  background-color: #F2CB05; }
+  .navbar a img {
+    width: 100px;
+    height: auto; }
+  .navbar ul li {
+    font-weight: 900; }
+  .navbar .bg-color {
+    border: none;
+    background-color: #F2CB05; }
+    .navbar .bg-color li a {
+      font-weight: 900; }
+
+/* main baner */
+main {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: flex-end; }
+  main:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/img_backgroud_tacoma.png);
+    background-size: cover;
+    opacity: 0.5; }
+  main .banner {
+    position: relative; }
+    main .banner h1 {
+      text-align: center;
+      color: #F2CB05;
+      font-weight: 900;
+      letter-spacing: 5px; }
+    main .banner p {
+      text-align: center;
+      color: whitesmoke;
+      font-weight: bold;
+      padding-top: 15px;
+      bottom: 30px; }
+
+/* Seccion , carrousel de img */
+section {
+  margin: auto; }
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 30px 30px black;
+  background-color: black;
+  margin: 10px;
+  border-radius: 5%;
+  padding: 10px; }
+  .card .card_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .card .card_img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+      border-radius: 5%; }
+    .card .card_img:hover {
+      opacity: 0.5; }
+  .card .card_content {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 20px; }
+    .card .card_content:hover {
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0; }
+    .card .card_content a {
+      text-decoration: none;
+      color: #F2CB05; }
+    .card .card_content p {
+      text-align: center;
+      line-height: 30px;
+      font-weight: 700;
+      color: #124673;
+      padding: 0 10px; }
+    .card .card_content h3 {
+      font-weight: 900;
+      font-size: 1.5em; }
+    .card .card_content h5 {
+      text-align: center;
+      font-size: 30px;
+      color: #F2CB05; }
+
+/* FOOTER */
+.pie {
+  text-align: center; }
+  .pie .pie_redes h4 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: whitesmoke;
+    padding-top: 20px; }
+  .pie .pie_redes a {
+    padding: 0 10px; }
+  .pie .pie_contacto a {
+    text-decoration: none; }
+    .pie .pie_contacto a h4 {
+      padding-top: 20px;
+      color: whitesmoke;
+      font-weight: 900; }
+  .pie .pie_contacto p {
+    color: whitesmoke; }
