@@ -20,7 +20,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
 
-    <title>Pagina de Paneles</title>
+    <title>Pagina de Contacto</title>
 </head>
 <body>
     <!-- NAV -->
@@ -61,90 +61,83 @@
         </nav>
     </header>
 
-    <!-- Seccion Paneles -->
-    <section>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner carru_img">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="card">
-                        <div class="card_img">
-                            <img src="../Imagenes/panel_largo.png" alt="Panel largo">
-                            
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>LED ANTI-POLVO</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod culpa aspernatur, dolorum eum magni asperiores. Labore deserunt et tempora aut.</p>
-                            <h5>$2500,00<h5>
-                            </a>
-                        </div>
-                          
-                    </div>
+    <!-- Seccion -->
+    <section class="bloque">
+        
+        <form class="form_container">
+            <h3>CONTACTO</h3>
+
+            <div class="id_form">
+                <div class="id">
+                    <label for="Id_name">Nombre</label>
+                    <input type="text" id="Id_name" placeholder="Nombre">
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="card">
-                        <div class="card_img">
-                            <img src="../Imagenes/panel de emutir" alt="Panel Redondo">
-                          
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>PANEL LED EMBUTIR</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis consectetur pariatur eum illo nemo aliquam expedita accusantium dolorem! Amet, ad.</p>
-                            <h5>$2200,00<h5>
-                            </a>
-                        </div>
                         
+                <div class="id">
+                    <label for="Telefono">Telefono</label>
+                    <input type="number" id="Telefono" placeholder="Telefono">
+                </div>
+
+                <div class="id">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="Mail">
+                </div>
+                        
+
+                <div class="consultas_form">
+
+                    <input type="radio" id="consultas" name="consultas" value="consultas">
+                    <label for="Masculino">Consultas</label><br>
+                    <input type="radio" id="Presupuesto" name="consultas" value="Presupuesto">
+                    <label for="Presupuesto">Presupuesto</label><br>
+                    <input type="radio" id="Devoluciones" name="consultas" value="Devoluciones">
+                    <label for="Devoluciones">Devoluciones</label>
+
+                </div>
+
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Observaciones"></textarea>
+                </div>
+                        
+                <div class="boton_form">
+                    <input class="enviar" type="submit" value="Enviar">
+                    <input class="borrar" type="reset" value="Borrar">
+                </div>        
+            </div>        
+        </form>       
+                    
+       
+            
+        <div class="seccion_map">
+            <div class="map">
+                <h6>COMO LLEGAR</h6>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="360" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://putlocker-is.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: center;
+                                height: 500px;
+                                width: 600px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">how to add google map to my website</a>
+                        <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 500px;
+                                    width: 600px;
+                                }
+                        </style>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="card_img">
-                            <img src="../Imagenes/panelescuadrado.png" alt="Panel Cuadrado">
-                          
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>PANELES CUADRADOS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet aspernatur iste labore id, repellendus dignissimos facere quidem ea beatae.</p>
-                            <h5>$950,00<h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="card_img">
-                            <img src="../Imagenes/panelesRedondos.png" alt="Panel Redondo">
-                          
-                        </div>
-                        <div class="card_content">
-                            <a href="./paneles.html">
-                            <h3>PANELES REDONDOS</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque tempore saepe accusamus in molestias aspernatur suscipit beatae nulla rerum id?</p>
-                            <h5>$600,00<h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-              
             </div>
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden carrousel_btn">Previous</span>
-            </button>
-            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden carrousel_btn">Next</span>
-            </button>
         </div>
-    </section>
+    
+    </section>     
 
     <!-- FOOTER -->
     <footer>
@@ -159,7 +152,7 @@
             </div>
             <div class="pie_contacto">
 
-                <a href="./contactos.html"><h4>CONTACTANOS</h4></a>
+                <a href="./contacto.html"><h4>CONTACTANOS</h4></a>
                 <p>
                     tacoma_mail@gmail.com <br>
                     Av.Elberg Alarga 2022 <br>

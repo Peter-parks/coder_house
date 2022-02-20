@@ -117,6 +117,7 @@ main {
 /* Seccion , carrousel de img */
 section {
     margin: auto;
+    padding: 20px 0;
 
 }
 
@@ -211,6 +212,93 @@ section {
 }
 
 
+/* FORM */
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    padding-top: 15px;
+
+    & .form_container{
+        background-color: $azul-oscuro;
+        box-shadow: 0px 0px 10px 0px #333 inset;
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+
+        & h3 {
+            text-align: center;
+            font-weight: 900;
+            font-size: 2em;
+
+        }
+
+        & .id_form {
+            width: 200px;
+            
+        }
+
+        & .boton_form {
+
+            & input{
+                height: 40px;
+            }
+
+            & .enviar {
+                background-color: $amarillo-light;
+        }
+
+
+    }
+  }
+
+}
+
+/* MAP */
+.seccion_map {
+
+    & .map {
+        width: 357px;
+        padding: 0 3px;
+    }
+
+    & h6 {
+        font-weight: 900;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 20px 0;
+    }
+
+    & .mapouter {
+        width: 360px;
+    }
+
+    & .gmap_canvas {
+        width: 350px;
+    }
+}
+
+
+/* Tablas de Presupuesto */
+
+.table_content {
+    & h2{
+        text-align: center;
+        font-weight: 900;
+        padding-top: 10px;
+    }
+
+    & h3 {
+        font-weight: 900;
+        padding: 10px 0;
+        letter-spacing: 5px;
+        
+    }
+}
 
 
 /* FOOTER */

@@ -68,7 +68,8 @@ main {
 
 /* Seccion , carrousel de img */
 section {
-  margin: auto; }
+  margin: auto;
+  padding: 20px 0; }
 
 .card {
   width: 320px;
@@ -127,6 +128,60 @@ section {
       text-align: center;
       font-size: 30px;
       color: #F2CB05; }
+
+/* FORM */
+.bloque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  padding-top: 15px; }
+  .bloque .form_container {
+    background-color: #124673;
+    box-shadow: 0px 0px 10px 0px #333 inset;
+    width: 100%;
+    height: auto;
+    padding-left: 15px; }
+    .bloque .form_container h3 {
+      text-align: center;
+      font-weight: 900;
+      font-size: 2em; }
+    .bloque .form_container .id_form {
+      width: 200px; }
+    .bloque .form_container .boton_form input {
+      height: 40px; }
+    .bloque .form_container .boton_form .enviar {
+      background-color: #F2CB05; }
+
+/* MAP */
+.seccion_map .map {
+  width: 357px;
+  padding: 0 3px; }
+
+.seccion_map h6 {
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px 0; }
+
+.seccion_map .mapouter {
+  width: 360px; }
+
+.seccion_map .gmap_canvas {
+  width: 350px; }
+
+/* Tablas de Presupuesto */
+.table_content h2 {
+  text-align: center;
+  font-weight: 900;
+  padding-top: 10px; }
+
+.table_content h3 {
+  font-weight: 900;
+  padding: 10px 0;
+  letter-spacing: 5px; }
 
 /* FOOTER */
 .pie {
