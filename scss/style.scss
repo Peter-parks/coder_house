@@ -1,4 +1,5 @@
 @import "./_variables/colores";
+@import "./_variables/mediaQueries";
 
 $opacity: .5;
 
@@ -28,6 +29,11 @@ body{
         grid-row: 2/3;
     }
 
+    & .bloque{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
     & section {
         grid-column: 1/3;
         grid-row: 3/4;
@@ -45,17 +51,29 @@ body{
 
 /* NAV */
 
-.navbar {
-    background-color: $amarillo-light;
+nav {
+    background-color: $azul-oscuro;
+    
+    
 
     & a img {
-        width: 100px;
+        width: 130px;
         height: auto;
+        
     }
 
     & ul li {
         font-weight: 900;
-    }
+        padding: 0 20px;
+        
+         
+        & .nav_color {
+            
+            font-size: 1.4em;
+            
+        }
+    } 
+    
 
     & .bg-color {
         
@@ -64,8 +82,11 @@ body{
 
         & li a {
             font-weight: 900;
+            
         }
     }
+
+    
 
 }
 
@@ -104,13 +125,29 @@ main {
         & p {
             text-align: center;
             color: whitesmoke;
+            font-size: 1.3em;
             font-weight: bold;
             padding-top: 15px;
             bottom: 30px;
         }
     }
 
-
+    @include media('>=tablet'){
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        & .banner  {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+        
+    
 }
 
 
@@ -126,7 +163,7 @@ section {
 
 .card {
 
-    width: 320px;
+    width: 300px;
     position: relative;
     box-shadow: 0 30px 30px black;
     height: 400px;
@@ -134,8 +171,9 @@ section {
     background-color: black;
     padding: 10px;
     border-radius: 5%;
+    margin: auto;
 
-    
+
 
         & .card_img {
             position: absolute;
@@ -209,6 +247,14 @@ section {
         
         }
 
+        @include media('>=tablet'){
+            width: 500px;
+            height: 500px;
+        }
+        @include media('>=desktop'){
+            width: 700px;
+            height: 550px;
+        }
 }
 
 
@@ -250,12 +296,15 @@ section {
 
             & .enviar {
                 background-color: $amarillo-light;
+            }
+
+
         }
-
-
     }
-  }
 
+    @include media('>=tablet'){
+        width: 600px;
+    }
 }
 
 /* MAP */
@@ -263,7 +312,6 @@ section {
 
     & .map {
         width: 357px;
-        padding: 0 3px;
     }
 
     & h6 {
@@ -274,11 +322,24 @@ section {
     }
 
     & .mapouter {
-        width: 360px;
+        width: 357px;
     }
 
     & .gmap_canvas {
-        width: 350px;
+        width: 357px;
+    }
+
+    @include media('>=tablet'){
+        & .map {    
+            width: 600px;
+
+        }
+        & .mapouter {
+            width: 600px;
+        }
+        & .gmap_canvas {
+            width: 600px;
+        }
     }
 }
 
@@ -305,6 +366,11 @@ section {
 
 .pie {
     text-align: center;
+    background-color: $azul-oscuro;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 0px;
     
     & .pie_redes {
         & h4{
